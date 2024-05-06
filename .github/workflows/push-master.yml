@@ -36,8 +36,8 @@ jobs:
     - name: Run PlatformIO
       run: |
         pio run
-        zip -j .pio/build/recovery_firmware.zip .pio/build/firmware.bin
-        rm -f .pio/build/firmware.bin
+        zip -j .pio/build/recovery_firmware.zip .pio/build/esp32cam/firmware.bin
+        rm -f .pio/build/esp32cam/firmware.bin
 
     - uses: actions/upload-artifact@v3
       name: Upload artifacts (commit)
